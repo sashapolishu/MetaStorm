@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaStorm</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="wrapper page-main">
+        <header class="header column-space-between">
+            <div class="header__header align-items-center">
+                <div class="container header__header-container justify-content-space-between align-items-center">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <nav class="menu">
+                        <ul class="menu__list justify-content-space-between">
+                            <li class="menu__item menu__item-page"><a href="#"> Main</a>
+                                <span></span>
+                            </li>
+                            <li class="menu__item"><a href="pages/about.html">About</a></li>
+                            <li class="menu__item"><a href="pages/team.html">Team</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="socials justify-content-space-between">
+                        <li class="socials__item">
+                            <a href="#">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="5" fill="#C4C4C4" />
+                                    <rect width="45" height="45" rx="5" fill="#111110" />
+                                    <path
+                                        d="M34 16.207C33.193 16.5646 32.326 16.8063 31.4146 16.9155C32.355 16.3528 33.0586 15.4671 33.394 14.4238C32.5104 14.9486 31.5434 15.318 30.535 15.516C29.8569 14.7919 28.9587 14.312 27.9799 14.1507C27.001 13.9895 25.9963 14.1559 25.1218 14.6241C24.2472 15.0924 23.5517 15.8362 23.1432 16.7403C22.7348 17.6443 22.6362 18.6579 22.8628 19.6237C21.0725 19.5338 19.3211 19.0685 17.7223 18.2579C16.1235 17.4473 14.7129 16.3096 13.5823 14.9187C13.1957 15.5856 12.9734 16.3588 12.9734 17.1823C12.9729 17.9236 13.1555 18.6535 13.5048 19.3074C13.8542 19.9612 14.3595 20.5187 14.976 20.9304C14.261 20.9077 13.5618 20.7145 12.9366 20.3669V20.4249C12.9366 21.4647 13.2962 22.4724 13.9546 23.2771C14.6129 24.0819 15.5294 24.6341 16.5485 24.84C15.8853 25.0195 15.1899 25.0459 14.515 24.9173C14.8025 25.8119 15.3626 26.5942 16.1168 27.1547C16.8711 27.7152 17.7817 28.0258 18.7213 28.043C17.1263 29.2951 15.1566 29.9742 13.129 29.9712C12.7698 29.9713 12.4109 29.9504 12.0542 29.9084C14.1124 31.2318 16.5083 31.9341 18.9552 31.9313C27.2382 31.9313 31.7664 25.071 31.7664 19.1211C31.7664 18.9278 31.7615 18.7325 31.7528 18.5392C32.6336 17.9023 33.3939 17.1135 33.9981 16.2099L34 16.207Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item"><a href="#"><svg width="45" height="45" viewBox="0 0 45 45"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="5" fill="#C4C4C4" />
+                                    <rect width="45" height="45" rx="5" fill="#111110" />
+                                    <path
+                                        d="M31.5825 14.1118L12.9806 21.0358C11.7111 21.5279 11.7184 22.2115 12.7477 22.5164L17.5235 23.9544L28.5735 17.2249C29.096 16.918 29.5734 17.0831 29.181 17.4193L20.2283 25.2183H20.2262L20.2283 25.2193L19.8989 29.971C20.3815 29.971 20.5945 29.7573 20.8652 29.5052L23.1849 27.3278L28.0101 30.768C28.8998 31.241 29.5387 30.9979 29.7601 29.973L32.9276 15.564C33.2518 14.3093 32.4313 13.7411 31.5825 14.1118Z"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                        <li class="socials__item"><a href="#"><svg width="45" height="45"
+                                        viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="45" height="45" rx="5" fill="#C4C4C4" />
+                                        <rect width="45" height="45" rx="5" fill="#40B3E0" />
+                                        <rect width="45" height="45" rx="5" fill="#111110" />
+                                        <path
+                                            d="M15.2534 17.06C15.265 16.9459 15.2495 16.8306 15.2079 16.7235C15.1663 16.6164 15.0999 16.5204 15.014 16.4431L13.2394 14.3178V14H18.7475L23.0054 23.2859L26.7484 14H32V14.3178L30.4828 15.7625C30.4186 15.8115 30.369 15.8768 30.3393 15.9514C30.3097 16.026 30.3012 16.1072 30.3147 16.1862V26.8119C30.3012 26.8909 30.3097 26.9721 30.3393 27.0467C30.369 27.1214 30.4186 27.1866 30.4828 27.2356L31.9648 28.6812V29H24.5131V28.6822L26.0482 27.2009C26.1993 27.0509 26.1993 27.0069 26.1993 26.7781V18.1888L21.9319 28.9644H21.3562L16.3877 18.1888V25.4113C16.3468 25.7141 16.4485 26.0206 16.6632 26.24L18.6591 28.6475V28.9644H13V28.6475L14.995 26.24C15.1006 26.1313 15.1789 25.9998 15.2238 25.8559C15.2686 25.712 15.2788 25.5597 15.2534 25.4113V17.06Z"
+                                            fill="white" />
+                                    </svg>
+                                </a></li>
+                        <li class="socials__item"><a href="#"><svg width="45" height="45" viewBox="0 0 45 45"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="5" fill="#111110" />
+                                    <path
+                                        d="M17 29.1683C17 29.9595 17.8753 30.4373 18.5408 30.0095L29.6915 22.8412C30.3038 22.4475 30.3038 21.5525 29.6915 21.1588L18.541 13.9905C17.8754 13.5627 17.0002 14.0405 17.0002 14.8317L17 29.1683Z"
+                                        fill="white" />
+                                </svg></a></li>
+                    </ul>
+                    <div class="header__btns justify-content-space-between">
+                        <a href="#" class="header__btn-border flex-center">Connect Wallet</a>
+                        <a href="pages/private-sale.html" class="header__btn-color flex-center">Private Sale</a>
+                    </div>
+                </div>
+            </div>
+            <section class="header__body container ">
+                <h1>
+                    <img src="img/MetaStorm.svg" alt="MetaStorm">
+                    <span></span>
+                </h1>
+                <ul class="game-edges">
+                    <li class="game-edges__item flex"><img src="img/list-style-edge.svg" alt="shot"> The Best First
+                        Person Shooter</li>
+                    <li class="game-edges__item flex"><img src="img/list-style-edge.svg" alt="shot"> Built on Blockchain
+                    </li>
+                    <li class="game-edges__item flex"><img src="img/list-style-edge.svg" alt="shot"> Play to Earn in VR
+                    </li>
+                    <li class="game-edges__item flex"><img src="img/list-style-edge.svg" alt="shot"> Metaverse</li>
+                </ul>
+                <div class="header__body-btns flex">
+                    <a href="#" class="btn-gradient flex-center">DECK</a>
+                    <a href="#" class="btn-border flex-center">Community</a>
+                </div>
+            </section>
+            <span></span>
+        </header>
+        <main class="main">
+            <section class="video">
+                <h6 class="fake-title">lol</h6>
+                <ul class="medals justify-content-space-between container">
+                    <li class="medals__item column-space-between">
+                        <img src="img/medal1.png" alt="medal">
+                        Play to earn
+                    </li>
+                    <li class="medals__item column-space-between">
+                        <img src="img/medal2.png" alt="medal">
+                        NFT Trading
+                    </li>
+                    <li class="medals__item column-space-between">
+                        <img src="img/medal3.png" alt="medal">
+                        Free to play
+                    </li>
+                </ul>
+                <div class="video-container"> <iframe width="560" height="315" class="video__vid"
+                        src="https://www.youtube.com/embed/AmHjzvngtbE?controls=0" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="what">
+                <h6 class="fake-title">lol</h6>
+                <article class="what__what-info container">
+                    <h3 class="what-info__title">What is
+                        <img src="img/what-is-metastorm.svg" alt="MetaStorm">
+                    </h3>
+                    <p class="what-info__txt">MetaStorm is a blockchain based RPG VR shooter with a huge collection of
+                        modern weapons that players can use to equip, level up, complete missions and earn tokens.
+                        <br><br>
+
+                        Each player has the opportunity to build battle cards, collect weapons and even steal unique
+                        tokens from other players <br><br>
+
+                        MetaStorm also works as the basis for developing your own FPS project with any ideas. And the
+                        reason for it is that MetaStorm includes many functions: weapons, projectiles, uniforms,
+                        characters, various game modes, etc.
+                    </p>
+                </article>
+                <div class="what-img"><img src="img/what-is-img.png" alt="screen game"></div>
+
+            </section>
+            <section class="nft-box">
+                <h2 class="nft-box__title title">NFT BOX</h2>
+                <p class="nft-box__info container">Several types of NFT BOXes will give players various advantages in
+                    the game, such as exclusive weapons and equipment, the ability to unlock specific skills (such as a
+                    missile strike, call for a helicopter, etc.), the ability to open new maps for battles, the ability
+                    to move to a new play tier with more strong rivals.
+                </p>
+                <div class="swiper container">
+                    <ul class="swiper-wrapper container">
+                        <li class="swiper-slide swiper-slide1 nft-slide1 column-space-around align-items-center">
+                            <span></span>
+                            <img src="img/nft-slide-cont1.png" alt="box">
+                            <span>BOX Weapon</span>
+                        </li>
+                        <li class="swiper-slide swiper-slide1 nft-slide2 column-space-around align-items-center">
+                            <span></span>
+                            <img src="img/nft-slide-cont2.png" alt="box">
+                            <span>BOX Outfit</span>
+                        </li>
+                        <li class="swiper-slide swiper-slide1 nft-slide3 column-space-around align-items-center">
+                            <span></span>
+                            <img src="img/nft-slide-cont3.png" alt="box">
+                            <span>BOX Skills</span>
+                        </li>
+                        <li class="swiper-slide swiper-slide1 nft-slide4 column-space-around align-items-center">
+                            <span></span>
+                            <img src="img/nft-slide-cont4.png" alt="box">
+                            <span>BOX New Card Opening </span>
+                        </li>
+                        <li class="swiper-slide swiper-slide1 nft-slide5 column-space-around align-items-center">
+                            <span></span>
+                            <img src="img/nft-slide-cont5.png" alt="box">
+                            <span>BOX game level</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.69">
+                            <path
+                                d="M47.6001 51.0002L30.6001 34.0002L47.6001 17.0002L44.2001 10.2002L20.4001 34.0002L44.2001 57.8002L47.6001 51.0002Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.19">
+                            <path
+                                d="M20.3999 51.0002L37.3999 34.0002L20.3999 17.0002L23.7999 10.2002L47.5999 34.0002L23.7999 57.8002L20.3999 51.0002Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+            </section>
+            <section class="equipments">
+                <h2 class="equipments__title title">NFT EQUIPMENTS</h2>
+                <div class="swiper2 container">
+                    <ul class="swiper-wrapper container">
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img2.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img3.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img4.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img5.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img6.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img7.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img8.png" alt="weapon"></li>
+                        <li class="swiper-slide swiper-slide2 flex-center"><img src="img/slider2-img9.png" alt="weapon"></li>
+                    </ul>
+                </div>
+                <div class="mini-swiper2 container">
+                    <ul class="swiper-wrapper mini-swiper-wrapper container ">
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img2.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img3.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img4.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img5.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img6.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img7.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img8.png" alt="weapon">
+                        </li>
+                        <li class="mini-swiper-slide swiper-slide  flex-center"><img src="img/slider2-img9.png" alt="weapon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev2 mini-swiper-button-prev2">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.69">
+                            <path
+                                d="M47.6001 51.0002L30.6001 34.0002L47.6001 17.0002L44.2001 10.2002L20.4001 34.0002L44.2001 57.8002L47.6001 51.0002Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="swiper-button-next2 mini-swiper-button-next2">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.19">
+                            <path
+                                d="M20.3999 51.0002L37.3999 34.0002L20.3999 17.0002L23.7999 10.2002L47.5999 34.0002L23.7999 57.8002L20.3999 51.0002Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </div>
+            </section>
+            <section class="metaverse">
+                <h2 class="metaverse__title">Metaverse of MetaStorm</h2>
+                <p class="metaverse__info container">VR allows a player to become a part of the game world, get used to
+                    the role of his/her character and feel and understand the story of the game most deeply.
+                </p>
+                <div class="video-container video-container2">
+                    <iframe width="560" class="video__vid" height="315" src="https://www.youtube.com/embed/GdruRuyThX8"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="concept">
+                <h2 class="concept__title title">GAME CONCEPT</h2>
+                <div class="concept__concept-body justify-content-space-between container">
+                    <div class="concept-body__concept-info">
+                        <p class="concept-info__txt">The game concept includes several game modes, one of the modes is
+                            to create your own map for play to earn tokens. Players can create their own cards and earn
+                            tokens when other players visit them. <br><br>
+
+                            Players can create guilds and fight each other in order to steal the lands. Guilds can build
+                            their houses, headquarters, etc.
+                        </p>
+                        <div class="header__body-btns flex concept-btns">
+                            <a href="#" class="btn-gradient flex-center">DECK</a>
+                            <a href="#" class="btn-border flex-center">Community</a>
+                        </div>
+                    </div>
+                    <ul class="concept-body__tabs">
+                        <li class="tab tab1">
+                            <h6 class="tab__title flex flex-center"><img src="img/logo.png" alt="logo" width="30"> MODE
+                                PLAY</h6>
+                            <ul class="game-edges tab__list">
+                                <li class="game-edges__item concept-list__item flex"><img src="img/list-style-edge.svg"
+                                        width="26" alt="shot">Team mode </li>
+                                <li class="game-edges__item concept-list__item flex"><img src="img/list-style-edge.svg"
+                                        width="26" alt="shot"> Deathmatch mode
+                                </li>
+                                <li class="game-edges__item concept-list__item flex"><img src="img/list-style-edge.svg"
+                                        width="26" alt="shot"> Storyline mode
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tab tab2">
+                            <h6 class="tab__title flex flex-center"><img src="img/logo.png" alt="logo" width="30">
+                                CUSTOM MAP</h6>
+                            <ul class="game-edges tab__list">
+                                <li class="game-edges__item concept-list__item flex"><img src="img/list-style-edge.svg"
+                                        width="26" alt="shot">Build your own map to play and earn</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="token flex">
+                <h6 class="fake-title">lol</h6>
+                <div class="token-container container align-items-center justify-content-space-between">
+                    <article class="token-model">
+                        <h3 class="token-model__title">TOKEN MODEL</h3>
+                        <div class="token-model__token-mest flex">
+                            <img src="img/logo.png" alt="logo">
+                            <p class="token-model__txt column-space-around">
+                                <img src="img/Token$MEST.svg" alt="Token $MEST" width="171">
+                                <span class="token-model__txt2">Maximum supply = 500,000,000</span>
+                            </p>
+                        </div>
+                        <ul class="token-model__token-list">
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Used to
+                                complete missions with rare drops of NFT tokens.
+                            </li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Conducting
+                                in-game events</li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Bet for
+                                receiving weekly rewards in the form of $MEST and
+                                NFT tokens.</li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Conducting
+                                major tournaments among guilds</li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Purchase
+                                of land in the metaverse or NFT token sets.</li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Makes it
+                                possible to receive rewards for the game to open
+                                new cards</li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Used in
+                                different game modes</li>
+                            <li class="token-list__item flex"><img src="img/token-list-style.svg" alt="star"> Used to
+                                buy and upgrade weapons.</li>
+                        </ul>
+                    </article>
+                    
+                    <div class="token__img"> <img src="img/token.png" alt="token"></div></div>
+            </section>
+            <section class="roadmap">
+                <h2 class="roadmap__title title">ROADMAP</h2>
+                <div class="roadmap__body">
+                    <img src="img/roadmap-kap768png.png" alt="map" class="roadmap-map768">
+                    <div class="lists">
+                        <div class="top-lists justify-content-space-between">
+                            <ul class="roadmap__list">
+                                <li>
+                                    <h6 class="date">Q2 - Q4 2021
+                                    </h6>
+                                </li>
+                                <li>— Conducting a marketing campaign to develop the community</li>
+                                <li>— Private Sale</li>
+                                <li>— Public Sale</li>
+                                <li>— Pre-alpha Release</li>
+                                <li>— MEST Token Listing</li>
+                            </ul>
+                            <ul class="roadmap__list">
+                                <li>
+                                    <h6 class="date">Q1 2022</h6>
+                                </li>
+                                <li>— Early access to the Metaverse</li>
+                                <li>— Full 3D models</li>
+                                <li>— Release of new NFT tokens: map, weapon skin</li>
+                                <li>— Weapon upgrade function</li>
+                            </ul>
+                        </div>
+                        <div class="roadmap-map"></div>
+                        <div class="bottom-lists justify-content-space-between">
+                            <ul class="roadmap__list">
+                                <li>
+                                    <h6 class="date">Q3 2022</h6>
+                                </li>
+                                <li>— Conclusion of commercial agreements with strategic investors and a development
+                                    group
+                                </li>
+                                <li>— Development of marketing materials for private investors</li>
+                                <li>— Seed Sale</li>
+                                <li>— Conclusion of new partnerships</li>
+                                <li>— Website launch</li>
+                            </ul>
+                            <ul class="roadmap__list">
+                                <li>
+                                    <h6 class="date">Q3 2022</h6>
+                                </li>
+                                <li>— Conclusion of commercial agreements with strategic investors and a development
+                                    group
+                                </li>
+                                <li>— Development of marketing materials for private investors</li>
+                                <li>— Seed Sale</li>
+                                <li>— Conclusion of new partnerships</li>
+                                <li>— Website launch</li>
+                            </ul>
+                            <ul class="roadmap__list">
+                                <li>
+                                    <h6 class="date">Q4 2022 (October)</h6>
+                                </li>
+                                <li>— MetaStorm 1.0 version</li>
+                                <li>— IOS & Android Application</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="team">
+                <h2 class="team__title title">Team</h2>
+                <p class="team__info container">MetaSrorm is a team of over 20 people who have a strong passion for both
+                    gaming and blockchain. Most of the team members have over 10 years of experience in the gaming
+                    industry, and the team also has a wide experience in the field of virtual development. Blockchain is
+                    about to revolutionize the gaming world and the MetaStorm team wants to make the most possible input
+                    into this industry.</p>
+                <ul class="team__gallery flex container">
+                    <li class="gallery__item flex-center"><img src="img/team1.png" alt="crewman"></li>
+                    <li class="gallery__item flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item flex-center"><img src="img/team2.png" alt="crewman"></li>
+                    <li class="gallery__item flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item flex-center"><img src="img/team3.png" alt="crewman"></li>
+                    <li class="gallery__item flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item flex-center"><img src="img/team4.png" alt="crewman"></li>
+                    <li class="gallery__item flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item flex-center"><img src="img/team5.png" alt="crewman"></li>
+                    <li class="gallery__item flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item flex-center"><img src="img/team6.png" alt="crewman"></li>
+
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/team1.png" alt="crewman">
+                    </li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/team2.png" alt="crewman">
+                    </li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/team3.png" alt="crewman">
+                    </li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/logo.png" alt="logo"></li>
+
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/logo.png" alt="logo">
+                    </li>
+
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/team4.png" alt="crewman">
+                    </li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/team5.png" alt="crewman">
+                    </li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/logo.png" alt="logo"></li>
+                    <li class="gallery__item gallery__item506 flex-center"><img src="img/team6.png" alt="crewman">
+                    </li>
+                </ul>
+                <a href="#" class="btn-gradient team__btn flex-center">MEET OUR TEAM</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="partners container">
+                <h2 class="partners__title">PARTNERS</h2>
+                <ul class="partners-container flex">
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                    <li><img src="img/partner.svg" alt="partner"></li>
+                </ul>
+                <div class="swiper-footer container">
+                    <ul class="swiper-wrapper container">
+                        <li class="swiper-slide swiper-slide-footer"><img src="img/partner.svg" alt="partner"></li>
+                        <li class="swiper-slide swiper-slide-footer"><img src="img/partner.svg" alt="partner"></li>
+                        <li class="swiper-slide swiper-slide-footer"><img src="img/partner.svg" alt="partner"></li>
+                        <li class="swiper-slide swiper-slide-footer"><img src="img/partner.svg" alt="partner"></li>
+                    </ul>
+                </div>
+                <div class="swiper-pagination-footer">
+                </div>
+            </section>
+            <div class="footer__footer container align-items-center">
+                <div class="footer__info justify-content-space-between align-items-center">
+                    <span>© 2021 MetaStorm. All rights reserved</span>
+                    <ul class="socials socials-footer align-items-center justify-content-space-between">
+                        <li>Contact Us</li>
+                        <li class="socials__item"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+                        <li class="socials__item"><a href="#"><img src="img/telegram.svg" alt="telegram"></a></li>
+                        <li class="socials__item"><a href="#"><img src="img/m.svg" alt="m"></a></li>
+                        <li class="socials__item"><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            spaceBetween: 27,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1170: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+    <script>
+        const swiper2 = new Swiper('.swiper2', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 1127,
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+            thumbs: {
+                swiper: {
+                    el: '.mini-swiper2',
+                    slidesPerView: 9,
+                }
+            }
+        });
+    </script>
+    <script>
+        const swiperFooter = new Swiper('.swiper-footer', {
+            loop: true,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination-footer',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
